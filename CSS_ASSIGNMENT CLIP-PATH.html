@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_ASSIGNMENT CLIP_PATH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 95%;
+            height: 100vh;
+            position: relative;
+            margin: 0% auto;
+        }
+        .m-left{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            position: absolute;
+            z-index: 1;
+        }
+        h2{
+            color: white;
+        }
+        .logo h2 span{
+            border: 2px solid white;
+            background-color: white;
+            color: gray;
+        }
+        .m-left .menu a{
+            font-size: 20px;
+            padding: 5px;
+            color: white;
+            text-decoration: none;
+        }
+        .m-left .menu span{
+            color:orangered;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+        .m-left h2{
+            border: 2px solid white;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .main1{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: 0% auto;
+            position: absolute;
+            z-index: 1;
+            padding-top: 10%;
+            color: white;
+        }
+        .main1 span{
+            font-size: 22px;
+        }
+        .main1 h1{
+            letter-spacing: 3px;
+            padding: 10px 10px 10px 10px;
+        }
+        .main .main1 p{
+            margin-bottom: 3%;
+        }
+        .main .main1 a{
+            border: 2px solid white;
+            padding: 10px;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .main .main1 a:hover{
+            background-color: red;
+            border: 2px solid red;
+        }
+       .main .bx{
+            width: 100%;
+            height: 100%;
+            background: url(https://c4.wallpaperflare.com/wallpaper/70/309/249/hot-air-balloons-landscape-nature-mountains-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 49% 100%, 0 74%)
+        }
+        #name{
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          position: absolute;
+          z-index: 1;
+          background-color: gray;
+          padding: 15px;
+          font-size: 20px;
+          color: black;
+          right: 0;
+          left: 0;
+          margin: 0% auto;
+          bottom: -2%;
+        }
+        .box{
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            padding-top: 5%;
+        }
+        .box .btn{
+            width: 13%;
+            height: 80px;
+            transition: all 2s linear;
+            text-align: center;
+        }
+        .box .btn .icon{
+            padding: 32px;
+            font-size: 22px;
+            color: red;
+            border: 2px solid darkslategray;
+        }    
+       .btn h5{
+            color: red;
+            padding-top: 10%;
+            font-size: 11px;
+            text-decoration: underline solid darkcyan;
+            text-underline-offset: 10px;
+        }
+        .btn p{
+            font-size: 12px;
+            margin-top: 20px;;
+            color: darkslategray;
+        }
+        .btn h5 span{
+            color:darkslategray
+        }
+    </style>        
+</head>
+    <body>
+        <div class="main">
+            <div class="m-left">
+                <div class="logo">
+                    <h2> <span>L</span>ogo</h2>
+                </div>
+                <div class="menu">
+                    <a href=""><span>HOME</span></a>
+                    <a href="">ABOUT US</a>
+                    <a href="">PORTFOLID</a>
+                    <a href="">PRICING</a>
+                    <a href="">THEM</a>
+                    <a href="">BLOG</a>
+                    <a href="">CONTACT</a>
+                </div>
+            </div>    
+            <div class="main1">
+                    <span> Our clients Are Our Frist priority</span>
+                    <h1>WELCOME TO THE SKY  </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ducimus <br>
+                          id autem magnam odio maxime voluptates consectetur culpa officia <br>fugit doloremque! Illo neque nihil omnis incidun.<br></p>
+                    <a>GET STARTED NOW</a>
+                    <a>LEARN MORE</a>
+            </div>
+                    <i id="name" class="fa fa-pen-clip icon"></i>
+                    <div class="bx"></div>
+            </div>   
+            <div class="box">
+                <div class="btn">
+                    <i class="fa fa-object-group icon"></i>
+                    <h5> CLEAN CODE </h5>
+                    <P> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore magnam possimus libero sed voluptas illo.</P>
+                </div>
+                <div class="btn">
+                    <i class="fa-solid fa-laptop-code icon"></i>
+                    <h5><span>CLEAN CODE</span></h5> 
+                    <P> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore magnam possimus libero sed voluptas illo.</P>
+                </div>
+                <div class="btn">
+                    <i class="fa-regular fa-comments icon"></i>
+                    <h5><span>CREATIVE IDEAS</span></h5>
+                    <P> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore magnam possimus libero sed voluptas illo.</P>
+                </div>
+                <div class="btn">
+                    <i class="fa fa-square-plus icon"></i>
+                    <h5><span>FREE SUPORT </span>
+                        </h5>
+                    <P> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore magnam possimus libero sed voluptas illo.</P>
+                </div>
+            </div>    
+        </div>    
+    </body>
+</html>

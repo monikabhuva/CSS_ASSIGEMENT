@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_ASSIGNMENT BGCOLOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 95%;
+            height: 100vh;
+        position: relative;
+            margin: 2% auto;
+            display: flex;
+        }
+        .main .m-left{
+            width: 50%;
+            height: 90%;
+            background-color: rgb(1, 20, 20);
+            text-align: end;
+            padding:10% 5% 10% 0%;
+            /* position: absolute; */
+            
+        }
+        .main .m-left h2{
+            color: white;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+        .main .m-left h4{
+            color: orangered;
+            /* padding-top: 20px; */
+            padding: 40px 0px 10px 0px;
+        }
+        .main .m-left p{
+            padding-left: 20%;
+            color: bisque;
+            word-spacing: 2px;
+        }
+        .main .bt{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: white;
+            border: 2px solid white;
+        }   
+        .main .btn1{
+            position: absolute;
+            left: 48%;
+            top:33%; 
+            padding: 13px;
+            font-size: 20px;
+            color: brown;    
+        }
+        .main .btn2{
+            position: absolute;
+            left: 48%;
+            top:48%; 
+            padding: 13px;
+            font-size: 20px;
+            color: brown;    
+        }
+        .main .btn3{
+            position: absolute;
+            left: 48%;
+            bottom:29%; 
+            padding: 13px;
+            font-size: 20px;
+            color: brown;    
+        }
+        #icon{
+            color: black;
+        }
+        .main .m-right{
+            width: 50%;
+            height: 90%;
+            background-color: red;
+            background: url(https://png.pngtree.com/background/20210711/original/pngtree-hd-cool-background-illustration-picture-image_1131674.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="m-left">
+            <h2>OUR SERVICES</h2>
+            <h4>WEB DESIGN</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+           
+       
+            <h4>PRINT DESIGN</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        
+            <h4>PHOTOGRAPHY</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        </div>
+        <div class="btn1 bt">
+            <i id="icon" class="fa fa-computer"></i>
+        </div>
+        <div class="btn2 bt">
+            <i class="fa fa-print"></i>
+        </div>
+        <div class="btn3 bt">
+            <i class="fa fa-camera"></i>
+        </div>
+            <div class="m-right"></div>
+    </div>
+</body>
+</html>

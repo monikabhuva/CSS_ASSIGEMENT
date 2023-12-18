@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            background-color: black;
+            margin: 15px auto;
+            flex-wrap: wrap;
+        }
+        .main .m-left{
+            width: 85%;
+            height: 100%;
+            /* background-color:; */
+            overflow: hidden;
+        }
+        .main .m-right{
+            width: 15%;
+            height: 100%;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            line-height: 25px;
+            align-items: flex-end;
+            padding: 20px 15px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .m-left .bx1{
+                display: grid;
+                grid-template-columns: 70% 30%;
+                grid-template-rows: 250px;
+                gap: 15px;
+            }
+        .m-left .bx1 .itm1{
+            background: url(https://img.freepik.com/premium-photo/relaxing-place-national-5a-scenic-spot-green-mountain-clean-green-freshwater-lake-natural-scenery_911849-92224.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696636800&semt=ais);
+            background-size: cover;
+            transition: all 2s linear;
+        } 
+        .m-left .bx1 .itm1:hover{
+            background-position: center center
+        }
+        .m-left .bx1 .itm2{
+            background: url(https://img.freepik.com/free-vector/nature-scene-background-with-rainbow-sky_1308-67727.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        } 
+        .m-left .bx1 .itm2:hover{
+            background-position: center center
+        }
+        .m-left .bx2{
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 250px;
+            margin-top: 15px;
+            gap: 15px;
+        }
+        .m-left .bx2 .itm3{
+            background: url(https://img.freepik.com/premium-photo/suspension-bridge-travel-nature-scenery-building_1417-264.jpg?w=2000);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        }
+        .m-left .bx2 .itm3:hover{
+            background-position: center center;
+        }  
+        .m-left .bx2 .itm4{
+            background: url(https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        } 
+        .m-left .bx2 .itm4:hover{
+            background-position: center bottom;
+        }        
+        .m-left .bx2 .itm5{
+            background: url(https://img.freepik.com/premium-photo/beautiful-lake-natural-landscape-photography-wallpaper-relax-joyful-illustration_912113-264111.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696723200&semt=ais);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        }
+        .m-left .bx2 .itm5:hover{
+            background-position: center center;
+        }              
+        .m-left .bx3{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: 250px;
+            margin-top: 15px;
+            gap: 15px;
+        }
+        .m-left .bx3 .itm6{
+            background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/554ed178-6102-4b71-a972-e78428281b92/dgb4fsk-7b390188-53cc-42ef-8a70-7921cd854f83.jpg/v1/fill/w_800,h_600,q_75,strp/ai_images__4k____freepik__0410231826466848__by_thanhnguyenslq_dgb4fsk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NGVkMTc4LTYxMDItNGI3MS1hOTcyLWU3ODQyODI4MWI5MlwvZGdiNGZzay03YjM5MDE4OC01M2NjLTQyZWYtOGE3MC03OTIxY2Q4NTRmODMuanBnIiwiaGVpZ2h0IjoiPD02MDAiLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzU1NGVkMTc4LTYxMDItNGI3MS1hOTcyLWU3ODQyODI4MWI5MlwvdGhhbmhuZ3V5ZW5zbHEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.mCM8CojqPWxva-ADJYGdSV9UU3BYckREQqtaR9g2zQQ);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        }
+        .m-left .bx3 .itm6:hover{
+            background-position: center center;
+        }   
+        .m-left .bx3 .itm7{
+            background: url(https://img.freepik.com/premium-photo/wooden-bridge-leads-lake-sunset_865967-502642.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696723200&semt=ais);
+           background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear;
+        }
+        .m-left .bx3 .itm7:hover{
+            background-position: center  
+        }
+        .m-left .bx4{
+            display: grid;
+            grid-template-columns:repeat(3,1FR);
+            grid-template-rows: 200px;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .m-left .bx4 .itm8{
+            background: url(https://img.freepik.com/premium-photo/natural-view_948735-5219.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear ;
+        }
+        .m-left .bx4 .itm8:hover{
+            background-position: right center;
+        }
+        .m-left .bx4 .itm9{
+            background: url(https://img.freepik.com/premium-photo/lake-autumn-near-oak-tree_674594-24697.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696636800&semt=ais);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear ;
+        }
+        .m-left .bx4 .itm9:hover{
+            background-position: right center;
+        }
+        .m-left .bx4 .itm10{
+            background: url(https://wallpapers.com/images/hd/magical-forest-wdwfxmpg0sp9nrcc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 2s linear ;
+        }
+        .m-left .bx4 .itm10:hover{
+            background-position: right center;
+        }
+       @media screen and (max-width:800px){
+        .main{
+                flex-direction: column-reverse;
+            }
+            .main .m-left{
+                width: 100%;
+            }
+            .main .m-right{ 
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .main .m-left .bx1{
+                grid-template-columns: 1fr;
+            }
+             .main .m-left .bx2{
+                grid-template-columns: 1fr;
+            }
+            .main .m-left .bx3{
+                grid-template-columns: 1fr;
+            }
+            .main .m-left .bx4{
+                grid-template-columns: 1fr;
+            }
+            .main .m-left .bx1 .itm1{
+                width: 100%;
+            }
+            .main .m-left .bx1 .itm2{
+                width: 100%;
+            }
+            .main .m-left .bx2 .itm3{
+                width: 100%;
+            }
+            .main .m-left .bx2 .itm4{
+                width: 100%;
+            }
+            .main .m-left .bx2 .itm5{
+                width: 100%;
+            }
+            .main .m-left .bx3 .itm6{
+                width: 100%;
+            }
+            .main .m-left .bx3 .itm7{
+                width: 100%;
+            }
+            .main .m-left .bx3 .itm8{
+                width: 100%;
+            }
+            .main .m-left .bx4 .itm9{
+                width: 100%;
+            }
+            .main .m-left .bx4 .itm10{
+                width: 100%;
+            }
+            
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="m-left">
+            <div class="bx1">
+                <div class="itm1"></div>
+                <div class="itm2"></div>
+             </div>
+            <div class="bx2">
+                <div class="itm3"></div>
+                <div class="itm4"></div>
+                <div class="itm5"></div>
+            </div>
+            <div class="bx3">
+                <div class="itm6"></div>
+                <div class="itm7"></div>
+            </div>
+            <div class="bx4">
+                <div class="itm8"></div>
+                <div class="itm9"></div>
+                <div class="itm10"></div>
+
+            </div>
+        </div>
+        <div class="m-right">
+            <h2>SHUTTER</h2>
+            <a href="">HOME</a>
+            <a href="">PHOTOS</a>
+            <a href="">BIO</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+        </div>
+    </div>
+</body>
+</html>
